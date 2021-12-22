@@ -5,4 +5,8 @@ Overview and Summary:
 	data on a Mongo database, to help Robin to develop a web app.
   
     Use a web application to display the data, plus, alter the design of the web app to accommodate these images.
+    
+   
+Result : 
+	Web scraping was performed, python files written and MongoDB updated during run time.
 
