@@ -19,7 +19,7 @@ def index():
     # Find one record of data from the mongo database
     mars_dict = db.mars_dict.find_one()
     # Return template and data
-    return render_template("index.html", mars=mars_dict["img_url"])
+    return render_template("index.html", mars=mars_dict)
 
 
 @app.route("/scrape")
