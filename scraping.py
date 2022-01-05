@@ -49,10 +49,10 @@ def mars_facts():
     for img_raw in rel_image_lst:
         if re.search(hemisphere_title[idx],img_raw['alt']):
             img_url = url + img_raw['src']
-            dict_url_title = {}
-            dict_url_title['img_url'] = img_url
-            dict_url_title['title'] = hemisphere_title[idx]
-            hemisphere_image_urls.append(dict_url_title)  
+            hemisphere = {}
+            hemisphere['img_url'] = img_url
+            hemisphere['title'] = hemisphere_title[idx]
+            hemisphere_image_urls.append(hemisphere)  
             idx+=1
             if ( idx >= 4 ): 
                 break
